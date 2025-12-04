@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+}
+
+input:focus {
+  outline: none;
+  border-color: #34495e !important;
+}
+
+button:hover {
+  background-color: #34495e !important;
+}
+
+button:active {
+  background-color: #1a252f !important;
+}

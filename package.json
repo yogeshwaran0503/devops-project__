@@ -1,0 +1,17 @@
+{
+  "name": "mern-cicd-project",
+  "version": "1.0.0",
+  "description": "MERN Stack CI/CD Pipeline with Docker, Jenkins, and AWS",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-deps": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "docker:dev": "docker compose -f docker-compose.dev.yml up --build",
+    "docker:prod": "docker compose up --build"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
